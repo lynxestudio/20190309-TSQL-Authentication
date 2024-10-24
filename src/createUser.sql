@@ -1,6 +1,8 @@
 SET QUOTED_IDENTIFIER ON
+go
+use Posts
 GO
-alter PROCEDURE createUser(
+create PROCEDURE createUser(
 	@prmUsername	varchar(16)
 	,@prmPassword	varchar(64)
 	,@prmEmail		varchar(64)
